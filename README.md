@@ -1,4 +1,3 @@
 To Do:
-- Small button better alignnment
-- Button click particle animation
+- Getting JS Working
 - Deployment
