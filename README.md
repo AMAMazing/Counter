@@ -5,6 +5,5 @@ https://amazing-counter.vercel.app/
 
 ## To do
 - Get layout working on phones/Other devices
-- Number overflow
-- Make it a PWA
+- Figure out how to sort out number overflow
 - Launch on play store
