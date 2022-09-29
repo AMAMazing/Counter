@@ -7,8 +7,14 @@ export default function Home() {
   return (
     <div>
       <Head>
-      <title>Counter</title>
-      <link rel="icon" href="/favicon.ico" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
+        <title>Counter</title>
+        <link rel="icon" href="favicon.ico" />
+        <meta name="description" content="Counter app with glassmorphism theme." />
+
+        <link rel="manifest" href="manifest.json" />
       </Head>
 
       <h1></h1>
