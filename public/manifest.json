@@ -28,9 +28,9 @@
             "purpose": "maskable"
         }
     ],
-    "theme_color": "#6b0be0",
+    "theme_color": "#212121",
     "description": "Counter app with glassmorphism theme",
-    "background_color": "#6b0be0",
+    "background_color": "#212121",
     "display": "fullscreen",
     "orientation": "any"
 }

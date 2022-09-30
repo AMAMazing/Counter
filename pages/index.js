@@ -11,7 +11,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         
         <title>Counter</title>
-        <link rel="icon" href="favicon.ico" />
+        <link rel="icon" href="logo.png" />
         <meta name="description" content="Counter app with glassmorphism theme." />
 
         <link rel="manifest" href="manifest.json" />
