@@ -84,11 +84,11 @@ a {
 }
 
 .minus {
-  left: calc(50% - calc(150px - 5.25%));
+  left: calc(50% - calc(110px + 5.25%));
 }
 
 .plus {
-  left: calc(50% + calc(150px - 5.25%));
+  left: calc(50% + calc(110px + 5.25%));
 }
 
 @media (prefers-color-scheme: dark) {
