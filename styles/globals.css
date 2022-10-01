@@ -17,11 +17,12 @@ a {
 }
 
 .box {
-  margin: auto;
+  margin: auto auto 0;
+  padding-bottom: 1px;
   color: black;
   font-size: 10rem;
   text-align: center;
-  padding: 35px;
+  padding: 5px;
 
   box-sizing: border-box;
 
@@ -30,10 +31,9 @@ a {
   /*width: 450px;
   height: 300px;*/
   width: 80%;
-  height: 300px;
 
   left: 50%;
-  top: 35%;
+  top: 38.25%;
   transform: translate(-50%, -50%);
 
   background: linear-gradient(143.36deg, rgba(255, 255, 255, 0.58) 13.03%, rgba(255, 255, 255, 0.1) 89.42%);
