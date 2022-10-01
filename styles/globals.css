@@ -26,10 +26,12 @@ a {
   box-sizing: border-box;
 
   position: absolute;
-  width: 450px;
-  //width: auto;
 
+  /*width: 450px;
+  height: 300px;*/
+  width: 80%;
   height: 300px;
+
   left: 50%;
   top: 35%;
   transform: translate(-50%, -50%);
@@ -42,6 +44,7 @@ a {
 }
 
 .smallbox {
+  -webkit-tap-highlight-color: transparent;
   color: black;
   font-size: 2rem;
   text-align: center;
@@ -52,6 +55,7 @@ a {
   position: absolute;
   width: 125px;
   height: 50px;
+  
 
   top: calc(35% + 200px);
   transform: translate(-50%, -50%);
@@ -80,11 +84,11 @@ a {
 }
 
 .minus {
-  left: calc(50% - 150px);
+  left: calc(50% - calc(150px - 5.25%));
 }
 
 .plus {
-  left: calc(50% + 150px);
+  left: calc(50% + calc(150px - 5.25%));
 }
 
 @media (prefers-color-scheme: dark) {
