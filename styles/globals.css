@@ -33,7 +33,7 @@ a {
   width: 80%;
 
   left: 50%;
-  top: 38.25%;
+  top: 39%;
   transform: translate(-50%, -50%);
 
   background: linear-gradient(143.36deg, rgba(255, 255, 255, 0.58) 13.03%, rgba(255, 255, 255, 0.1) 89.42%);
@@ -57,7 +57,7 @@ a {
   height: 50px;
   
 
-  top: calc(35% + 200px);
+  top: calc(34.5% + 200px);
   transform: translate(-50%, -50%);
   
   background: linear-gradient(143.36deg, rgba(255, 255, 255, 0.58) 13.03%, rgba(255, 255, 255, 0.1) 89.42%);
