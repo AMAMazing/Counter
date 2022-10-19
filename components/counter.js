@@ -1,9 +1,10 @@
 import App from "next/app";
-import React, { Component } from "react"
+import React, { useState, Component, useRef} from "react"
 
 
-
+const widthx = document.getElementById('id');
 class Counter extends Component {
+
     constructor(props) {
         super(props);
         this.state = {
@@ -30,9 +31,10 @@ class Counter extends Component {
     };
 
     render() {
+        var x = 2.5;
         return (
             <div>
-                <div class="box">{this.state.count}</div>
+                <div class="box" style={{fontSize: '7.5rem', padding: '30px'}} id="box"> </div> {/* {this.state.count} */}
 
 
                 <button onClick={this.reset} class="smallbox reset">Reset</button>

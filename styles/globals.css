@@ -20,16 +20,15 @@ a {
   margin: auto auto 0;
   padding-bottom: 1px;
   color: black;
-  font-size: 10rem;
+  /* font-size: 10rem; */
   text-align: center;
-  padding: 0px;
 
   box-sizing: border-box;
 
   position: absolute;
-
-  /*width: 450px;
-  height: 300px;*/
+                               
+  /*width: 450px;*/
+  height: 240px;
   width: 80%;
 
   left: 50%;
