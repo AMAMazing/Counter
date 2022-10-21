@@ -1,45 +1,42 @@
 import App from "next/app";
-import React, { Component } from "react"
+import React, { Component, useRef, useState, useLayoutEffect, useEffect } from "react";
 
 
-class Counter extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            count: 0
-        };
+const Counter=()=>{
+    const ref = useRef(null);
+    const [width, setWidth] = useState(0);
+
+    useEffect(() => {
+        const observer = new ResizeObserver(entries => {
+          setWidth(entries[0].contentRect.width)
+        })
+        observer.observe(ref.current)
+        return () => ref.current && observer.unobserve(ref.current)
+      }, [])
+
+    const [count, setCount] = useState(0);
+ 
+    const increase = () => {
+        setCount(count+1);
     }
 
-    increment = () => {
-        this.setState({
-            count: this.state.count + 1
-        });
-    };
-
-    decrement = () => {
-        this.setState({
-            count: this.state.count - 1
-        });
-    };
-
-    reset = () => {
-        this.setState({
-            count: 0
-        });
-    };
-
-    render() {
-        return (
-            <div >
-                <div class="box" style={{fontSize: '7.5rem', padding: '30px'}} id="box" > </div> {/* {this.state.count} */}
-
-
-                <button onClick={this.reset} class="smallbox reset">Reset</button>
-                <button onClick={this.decrement} class="smallbox minus">-</button>
-                <button onClick={this.increment} class="smallbox plus">+</button>
-            </div>
-        );
+    const decrease = () => {
+        setCount(count-1);
     }
+
+    const reset = () => {
+        setCount(0);
+    }
+
+    return (
+        <div>
+            <div ref={ref} class="box" style={{fontSize: '10rem', padding: '0px'}} id="box" >{count} - {Math.round(width)}</div> 
+
+            <button onClick={reset} class="smallbox reset">Reset</button>
+            <button onClick={decrease} class="smallbox minus">-</button>
+            <button onClick={increase} class="smallbox plus">+</button>
+        </div>
+    );
 }
 
 export default Counter;
