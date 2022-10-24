@@ -28,9 +28,20 @@ const Counter=()=>{
         setCount(0);
     }
 
+    const countLen = count.toString().length;
+    const equation = (140 + (80 * (countLen - 1)));
+
+    if ((140 + (80 * (countLen - 1))) > width) {
+        var bbc = "too big";
+    } else {
+        var bbc = "not that big";
+    }
+     
+
     return (
         <div>
-            <div ref={ref} class="box" style={{fontSize: '10rem', padding: '0px'}} id="box" >{count} - {Math.round(width)}</div> 
+            {bbc} <br /> {countLen}
+            <div ref={ref} class="box" style={{fontSize: '5rem', padding: '60px', width: '170px'}} id="box" >{count}</div> 
 
             <button onClick={reset} class="smallbox reset">Reset</button>
             <button onClick={decrease} class="smallbox minus">-</button>
